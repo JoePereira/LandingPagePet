@@ -20,19 +20,22 @@ export function Hero(){
             <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8 '>
                     <div className='space-y-6'>
-                        <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl leading-10">Seu Pet merece cuidado, carinho e atencao especial.</h1>
-                        <p className="lg:text-lg">Oferecemos os melhores servicos para garantir o bem-estar e felicidade do seu amigo de quatro patas</p>
+                        <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl leading-10" data-aos="fade-down">Seu Pet merece cuidado, carinho e atencao especial.</h1>
+                        <p className="lg:text-lg" data-aos="fade-right" data-aos-delay="300">Oferecemos os melhores servicos para garantir o bem-estar e felicidade do seu amigo de quatro patas</p>
 
                             <a 
-                                href="#"
+                                target='_blank'
+                                href={`https://wa.me/5511918701996?text=Ola vim pelo site e gostaria de mais informacoes`}
                                 className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+                                data-aos="fade-up"
+                                data-aos-delay="500"
                             >
                                 <WhatsappLogo className="w-5 h-5"/>
                                 Contato via WhatsApp
                             </a>
                    
 
-                        <div className="mt-8">
+                        <div className="mt-8" data-aos="fade-right" data-aos-delay="700">
                             <p className="text-sm md-4"> 
                                 <b className="bg-black text-white px-2 py-1 rounded-md">5%</b> de desconto na primeira compra.
                             </p>
@@ -50,7 +53,7 @@ export function Hero(){
                         </div>
                     </div>
 
-                    <div className="hidden md:block h-full relative">
+                    <div className="hidden md:block h-full relative" data-aos="fade-left">
                         <Image
                             src={dogImg}
                             alt='Foto do dog'
